@@ -2,16 +2,14 @@
 
 // For this assignment you'll need to do a few things:
 // 1. Create a document ready handler.
-$().ready(function() {
-	$(".form-group required").validate({
-		rules: {
-			'your-name': "required",
-			minlength: 2
-		}
-		
-		
+$(document).on('ready', function(){
+	 $('#order-form').validate({
+		  // Handler for .ready() called.
+        submitHandler: function(form) {
+		 form.submit();
+        },
 	
-  // Handler for .ready() called.
+ 
 
 // 2. Define a validation object for use on your page.
 
@@ -19,4 +17,4 @@ $().ready(function() {
 
 // Refer to the `index.html` file for the validation rules that must be enforced.
 		});
-});
+	});
