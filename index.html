@@ -172,7 +172,7 @@
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="card-number"><span class="glyphicon glyphicon-question-sign" title="Test card number: 0000 0000 0000 0000"></span> Card Number</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number" SIZE="16" MAXLENGTH="16"  required>
+              <input type="number" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number" SIZE="16" MAXLENGTH="19"  required>
             </div>
             <!-- TODO: Make validation for card number according to these rules:
                   * Field must not be blank
@@ -226,7 +226,7 @@
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="cvv"><span class="glyphicon glyphicon-question-sign" title="Three-digit code from back of card."></span> Card CVV</label>
             <div class="col-sm-3">
-              <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code" required>
+              <input type="number" class="form-control" name="cvv" id="cvv" placeholder="Security Code" required>
             </div>
             <!-- TODO: Make validation for CVV according to these rules:
                   * Field must not be blank
