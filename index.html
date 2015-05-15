@@ -79,8 +79,8 @@
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="your-state"><span class="glyphicon glyphicon-question-sign" title="Two-letter state abbreviation."></span> State</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" name="your-state" id="your-state" placeholder="Your State" required>
-				<select name="state">
+            <input type="text" class="form-control" name="your-state" id="your-state" placeholder="Your State" required>
+	  <!--			<select name="state">
 					<option value="" selected>Please Select</option>
 					<option value="AK">Alaska</option>
 					<option value="AL">Alabama</option>
@@ -138,7 +138,7 @@
 					<option value="WI">Wisconsin</option>
 					<option value="WV">West Virginia</option>
 					<option value="WY">Wyoming</option>    
-					</select>
+					</select> -->
             </div>
             <!-- TODO: Make validation for state according to these rules:
                   * Field must not be blank
@@ -190,7 +190,7 @@
               <div class="row">
                 <div class="col-xs-3">
                   <select class="form-control col-sm-2" name="expiry-month" id="expiry-month" required>
-                    <option>Month</option>
+					 <option>Month</option>
                     <option value="01">Jan (01)</option>
                     <option value="02">Feb (02)</option>
                     <option value="03">Mar (03)</option>
@@ -206,8 +206,8 @@
                   </select>
                 </div>
                 <div class="col-xs-3">
-                  <select class="form-control" name="expiry-year">
-                    <option value="15">2015</option>
+                  <select class="form-control" name="expiry-year" >
+					 <option value="15">2015</option>
                     <option value="16">2016</option>
                     <option value="17">2017</option>
                     <option value="18">2018</option>
@@ -227,7 +227,7 @@
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="cvv"><span class="glyphicon glyphicon-question-sign" title="Three-digit code from back of card."></span> Card CVV</label>
             <div class="col-sm-3">
-              <input type="number" class="form-control" name="cvv" id="cvv" placeholder="Security Code" required>
+			  <input type="text" class="form-control" maxlength = "3" name="cvv" id="cvv" placeholder="Security Code" required>
             </div>
             <!-- TODO: Make validation for CVV according to these rules:
                   * Field must not be blank
@@ -283,12 +283,12 @@
       <footer>
         <p>&copy; Jane Student 2015</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> <!-- /container -->       
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/jquery.validate.min.js"></script>
-
-        <script src="js/main.js"></script>
+		<script src="js/main.js"></script>
+		
     </body>
 </html>
