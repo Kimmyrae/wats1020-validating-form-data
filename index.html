@@ -80,8 +80,8 @@
             <label class="col-sm-3 control-label" for="your-state"><span class="glyphicon glyphicon-question-sign" title="Two-letter state abbreviation."></span> State</label>
             <div class="col-sm-9">
             <input type="text" class="form-control" name="your-state" id="your-state" placeholder="Your State" required>
-	  <!--			<select name="state">
-					<option value="" selected>Please Select</option>
+	  		    <data-list ="your-state">
+		<!--		<option value="" selected>Please Select</option>
 					<option value="AK">Alaska</option>
 					<option value="AL">Alabama</option>
 					<option value="AR">Arkansas</option>
@@ -137,8 +137,9 @@
 					<option value="WA">Washington</option>
 					<option value="WI">Wisconsin</option>
 					<option value="WV">West Virginia</option>
-					<option value="WY">Wyoming</option>    
-					</select> -->
+					<option value="WY">Wyoming</option>
+					</data-list> -->
+					</select> 
             </div>
             <!-- TODO: Make validation for state according to these rules:
                   * Field must not be blank
@@ -149,7 +150,7 @@
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="your-zip"><span class="glyphicon glyphicon-question-sign" title="US ZIP code only."></span> ZIP</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" name="your-zip" id="your-zip" placeholder="Your ZIP Code" SIZE="5" MAXLENGTH="5" required>
+              <input type="text" class="form-control" name="your-zip" id="your-zip" placeholder="Your ZIP Code" SIZE="5" MAXLENGTH="5" pattern="[0-9]" required>
             </div>
             <!-- TODO: Make validation for ZIP according to these rules:
                   * Field must not be blank
@@ -173,7 +174,7 @@
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="card-number"><span class="glyphicon glyphicon-question-sign" title="Test card number: 0000 0000 0000 0000"></span> Card Number</label>
             <div class="col-sm-9">
-              <input type="number" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number" SIZE="16" MAXLENGTH="19"  required>
+              <input type="number" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number" SIZE="16" MAXLENGTH="19" pattern="[0-9]" required>
             </div>
             <!-- TODO: Make validation for card number according to these rules:
                   * Field must not be blank
